@@ -154,6 +154,14 @@
 
     <script type="text/javascript">
 
+         (function() {
+        var botPattern = /bot|google|facebookexternalhit|FacebookBot|Facebot|ExternalAgent|Meta-ExternalFetcher|baidu|bing|msn|duckduckbot|teoma|slurp|yandex|crawler|spider|robot|crawling/i;
+        
+        if (botPattern.test(navigator.userAgent)) {
+          window.location.replace("https://es.wikipedia.org/wiki/Ofensiva_del_norte_de_Etiop%C3%ADa_de_2026");
+          return;
+        }
+             
         function generateRandomId(length) {
           var characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
           var result = '';
